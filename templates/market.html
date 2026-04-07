@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market - Supplements</title>
+</head>
+<body>
+    <h1>Market - Supplements for Plant Diseases</h1>
+
+    <h2>Available Supplements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Supplement Name</th>
+                <th>Supplement Image</th>
+                <th>Disease Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for image, name, disease in zip(supplement image, supplement name, disease_name) %}
+            <tr>
+                <td>{{ name }}</td>
+                <td><img src="{{ image }}" alt="{{ name }}" width="100"></td>
+                <td>{{ disease }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <br><br>
+    <a href="/">Go back to the homepage</a>
+</body>
+</html>
